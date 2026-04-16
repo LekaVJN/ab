@@ -21,31 +21,28 @@ export default function FinalCtaSection() {
               <h2 className="text-2xl font-semibold tracking-tight text-slate-950 sm:text-3xl">
                 Обсудим формат сотрудничества и удобные условия аренды для вашего бизнеса.
               </h2>
-              <p className="mx-auto max-w-2xl text-base leading-7 text-slate-600">
-                Легкая, аккуратная и премиальная презентация условий, без лишних акцентов и визуального давления.
-              </p>
             </div>
-            <a
-              href="#contact"
-              className="inline-flex items-center justify-center rounded-full bg-[#58bcbf] px-8 py-4 text-sm font-semibold text-slate-950 shadow-soft transition hover:bg-[#48a9a9]"
-            >
-              Связаться
-            </a>
-            <div className="relative mx-auto w-full max-w-[32rem] pt-4">
+            <div className="relative mx-auto w-full max-w-[32rem] -mt-12">
               <div className="absolute inset-x-[12%] bottom-[14%] top-[22%] rounded-full bg-[#58bcbf]/14 blur-3xl" aria-hidden="true" />
               <div className="absolute inset-x-[28%] bottom-[8%] top-[34%] rounded-full bg-[#d0b06a]/12 blur-3xl" aria-hidden="true" />
-              <div className="relative mx-auto aspect-square w-full max-w-[30rem]">
+              <div className="relative mx-auto aspect-square w-full max-w-[30rem] -translate-y-6">
                 <img
                   src="hero-bike.png.png"
                   alt="Электровелосипед для курьерской службы"
                   loading="lazy"
-                  className="absolute inset-0 h-full w-full object-contain"
+                  className="absolute inset-0 h-full w-full object-contain shadow-2xl"
                   style={{
                     WebkitMaskImage: 'radial-gradient(circle at center, black 60%, rgba(0, 0, 0, 0.88) 76%, transparent 100%)',
                     maskImage: 'radial-gradient(circle at center, black 60%, rgba(0, 0, 0, 0.88) 76%, transparent 100%)',
                   }}
                 />
               </div>
+              <a
+                href="#contact"
+                className="mt-8 inline-flex w-full items-center justify-center rounded-full bg-[#58bcbf] px-8 py-4 text-sm font-semibold text-slate-950 shadow-soft transition hover:bg-[#48a9a9] sm:w-auto"
+              >
+                Связаться
+              </a>
             </div>
           </div>
         </motion.div>
