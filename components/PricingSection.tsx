@@ -17,7 +17,7 @@ const plans = [
 
 export default function PricingSection() {
   return (
-    <section id="pricing" className="relative overflow-hidden border-t border-white/10 bg-[#101820]">
+    <section id="pricing" className="border-t border-white/10 bg-[#08121f] relative overflow-hidden">
       <div className="absolute left-0 top-16 hidden h-64 w-64 rounded-full bg-[#8de1db]/10 blur-3xl md:block" aria-hidden="true" />
       <div className="container py-20">
         <motion.div
@@ -29,7 +29,7 @@ export default function PricingSection() {
         >
           <p className="section-title">Гибкие тарифы</p>
           <h2 className="text-3xl font-semibold tracking-tight text-white sm:text-4xl">
-            Понятные тарифы на технику
+            Гибкие тарифы для вашего бизнеса
           </h2>
         </motion.div>
 

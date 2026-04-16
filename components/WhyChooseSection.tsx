@@ -4,26 +4,26 @@ import { motion } from 'framer-motion';
 
 const features = [
   {
-    title: 'Оперативная связь',
-    description: 'На связи по телефону и в мессенджерах с менеджерами и курьерами, когда нужно быстро решить вопрос.',
+    title: 'Экономия до 40%',
+    description: 'Существенное сокращение транспортных расходов на последней миле.',
   },
   {
-    title: 'Плановое ТО каждые 2 недели',
-    description: 'Регулярно обслуживаем технику, чтобы она оставалась в рабочем состоянии и не копила проблемы.',
+    title: 'Надежный и оперативный ремонт',
+    description: 'Быстрое обслуживание или полная замена велосипеда в кратчайшие сроки.',
   },
   {
-    title: 'Ремонт и выездная помощь',
-    description: 'Если ситуация сложная и нужна помощь с техникой, можем забрать велосипед и решить вопрос на своей стороне.',
+    title: 'Выдача без ограничений',
+    description: 'Работаем без ограничений по гражданству, ФССП или регистрации.',
   },
   {
-    title: 'Замена, когда она нужна',
-    description: 'Если ремонт затягивается, выдаем замену, чтобы курьер не выпадал из работы.',
+    title: 'Экологичность',
+    description: 'Современный экологичный подход к городской курьерской сети.',
   },
 ];
 
 export default function WhyChooseSection() {
   return (
-    <section id="why" className="border-t border-white/10 bg-[#0f1821]">
+    <section id="why" className="border-t border-white/10 bg-[#07111f]">
       <div className="container py-20">
         <motion.div
           initial={{ opacity: 0, y: 24 }}
@@ -34,7 +34,7 @@ export default function WhyChooseSection() {
         >
           <p className="section-title">Почему выбирают нас</p>
           <h2 className="text-3xl font-semibold tracking-tight text-white sm:text-4xl">
-            Поддержка, которую удобно встроить в работу партнера
+            Проверенная поддержка для курьерских служб и курьерских партнеров
           </h2>
         </motion.div>
 

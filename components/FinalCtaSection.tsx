@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 
 export default function FinalCtaSection() {
   return (
-    <section className="border-t border-slate-200 bg-[#edf1f4] text-slate-950">
+    <section className="border-t border-slate-200 bg-slate-100 text-slate-950">
       <div className="container py-20">
         <motion.div
           initial={{ opacity: 0, y: 24 }}
@@ -15,21 +15,21 @@ export default function FinalCtaSection() {
         >
           <div className="space-y-8 text-center">
             <p className="inline-flex rounded-full bg-[#e7f8f8] px-4 py-1 text-sm font-semibold uppercase tracking-[0.24em] text-[#158889]">
-              Готовы обсудить сотрудничество
+              Готовы к переменам
             </p>
             <div className="space-y-4">
               <h2 className="text-2xl font-semibold tracking-tight text-slate-950 sm:text-3xl">
-                Подберем удобный формат выдачи и обслуживания под ваш парк.
+                Обсудим формат сотрудничества и удобные условия аренды для вашего бизнеса.
               </h2>
               <p className="mx-auto max-w-2xl text-base leading-7 text-slate-600">
-                Позвоните нам или оставьте контакт, и обсудим, как лучше запустить работу в вашем городе.
+                Легкая, аккуратная и премиальная презентация условий, без лишних акцентов и визуального давления.
               </p>
             </div>
             <a
-              href="tel:+79237977812"
+              href="#contact"
               className="inline-flex items-center justify-center rounded-full bg-[#58bcbf] px-8 py-4 text-sm font-semibold text-slate-950 shadow-soft transition hover:bg-[#48a9a9]"
             >
-              Позвонить
+              Связаться
             </a>
           </div>
         </motion.div>
