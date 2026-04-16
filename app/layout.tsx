@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   description:
     'ИП Вьюнов А.В. — электровелосипеды для курьерских партнеров: выдача, обслуживание, плановое ТО и замена техники в городах Сибири.',
   icons: {
-    icon: '/favicon.svg',
+    icon: '/ab/favicon.svg',
   },
 };
 
