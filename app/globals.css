@@ -1,0 +1,410 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+  font-family: 'Inter', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-feature-settings: 'cv02' on, 'cv03' on, 'ss01' on;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: #08121f;
+  color: #eef2f7;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+::selection {
+  background: rgba(88, 188, 191, 0.25);
+  color: #ffffff;
+}
+
+button,
+a {
+  transition: all 0.24s ease;
+}
+
+.container {
+  @apply mx-auto max-w-7xl px-6 lg:px-8;
+}
+
+.hero-area .container {
+  position: relative;
+  z-index: 1;
+}
+
+.section-heading {
+  @apply max-w-3xl;
+}
+
+.section-title {
+  @apply text-sm font-semibold uppercase tracking-[0.24em] text-[#7fd6d5];
+}
+
+.card-surface {
+  @apply rounded-[28px] border border-white/10 bg-white/5 shadow-soft backdrop-blur-xl;
+}
+
+.glow-section {
+  background: radial-gradient(circle at top right, rgba(88, 188, 191, 0.15), transparent 35%),
+    radial-gradient(circle at bottom left, rgba(120, 145, 255, 0.12), transparent 30%),
+    linear-gradient(180deg, rgba(13, 20, 34, 0.98), rgba(7, 11, 22, 0.98));
+}
+
+.hero-visual {
+  position: relative;
+  width: min(100%, 860px);
+  max-width: 860px;
+  aspect-ratio: 1 / 0.95;
+  pointer-events: none;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.hero-bg-grid {
+  position: absolute;
+  inset: 0;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+  background-size: 140px 140px;
+  opacity: 0.06;
+}
+
+.hero-visual-svg {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.hero-city-marker text {
+  fill: rgba(243, 248, 255, 0.95);
+  font-size: 0.88rem;
+  font-family: Inter, ui-sans-serif, system-ui, sans-serif;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+}
+
+@media (max-width: 767px) {
+  .hero-city-marker text {
+    display: none;
+  }
+}
+
+.hero-city-ring {
+  fill: rgba(88, 188, 191, 0.06);
+  stroke: rgba(88, 188, 191, 0.16);
+  stroke-width: 1.5;
+  filter: drop-shadow(0 0 20px rgba(81, 215, 214, 0.14));
+}
+
+.hero-city-core {
+  fill: rgba(146, 238, 232, 0.98);
+  filter: drop-shadow(0 0 22px rgba(146, 238, 232, 0.28));
+}
+
+.hero-floating-dot {
+  fill: rgba(146, 238, 232, 0.92);
+  filter: drop-shadow(0 0 20px rgba(146, 238, 232, 0.18));
+  opacity: 0.92;
+  animation: heroFloat 8s ease-in-out infinite;
+}
+
+.hero-floating-dot.dot-2 {
+  animation-delay: 1.4s;
+}
+
+.hero-floating-dot.dot-3 {
+  animation-delay: 2.5s;
+}
+
+.hero-floating-dot.dot-4 {
+  animation-delay: 3.6s;
+}
+
+.hero-floating-dot.dot-5 {
+  animation-delay: 4.2s;
+}
+
+@keyframes heroFloat {
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(8px, -6px);
+  }
+}
+
+.hero-lines path {
+  stroke: url(#heroLineGradient);
+  stroke-width: 1.6;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  filter: url(#heroGlow);
+  opacity: 0.92;
+  animation: heroLineMove 10s linear infinite;
+}
+
+.hero-line-glow path {
+  stroke: rgba(88, 188, 191, 0.14);
+  stroke-width: 6;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  opacity: 0.24;
+  filter: url(#heroGlow);
+}
+
+.hero-line-glow path {
+  stroke: rgba(88, 188, 191, 0.14);
+  stroke-width: 6;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  opacity: 0.2;
+  filter: url(#heroGlow);
+}
+
+.hero-bg-node {
+  fill: rgba(109, 215, 216, 0.92);
+  stroke: rgba(255, 255, 255, 0.18);
+  stroke-width: 1;
+  filter: drop-shadow(0 0 20px rgba(109, 215, 216, 0.2));
+  opacity: 0.98;
+  transform-origin: center;
+  animation: heroNodePulse 5.4s ease-in-out infinite;
+}
+
+.hero-bg-node.hero-bg-node-strong {
+  fill: rgba(146, 238, 232, 1);
+}
+
+.hero-city-labels text {
+  fill: rgba(255, 255, 255, 0.9);
+  font-size: 0.78rem;
+  font-family: Inter, ui-sans-serif, system-ui, sans-serif;
+}
+
+.hero-route-dot {
+  fill: rgba(146, 238, 232, 0.78);
+  filter: drop-shadow(0 0 10px rgba(146, 238, 232, 0.26));
+  opacity: 0.72;
+  animation: routeDotMove 5.5s ease-in-out infinite;
+}
+
+.route-1 {
+  animation-delay: 0s;
+}
+
+.route-2 {
+  animation-delay: 1.5s;
+}
+
+.route-3 {
+  animation-delay: 3s;
+}
+
+.hero-bike-icon {
+  filter: drop-shadow(0 0 18px rgba(88, 188, 191, 0.3));
+  opacity: 0.95;
+  transform-origin: center;
+  animation: heroBikeMove 7.5s ease-in-out infinite;
+}
+
+.hero-bike-icon.bike-1 {
+  animation-delay: 0s;
+}
+
+.hero-bike-icon.bike-2 {
+  animation-delay: 1.5s;
+}
+
+.hero-bike-icon.bike-3 {
+  animation-delay: 3s;
+}
+
+@keyframes heroBikeMove {
+  0%,
+  100% {
+    transform: translate(0, 0) scale(1);
+    opacity: 0.95;
+  }
+  50% {
+    transform: translate(-6px, -4px) scale(1.05);
+    opacity: 0.72;
+  }
+}
+
+@keyframes routeDotMove {
+  0%,
+  100% {
+    transform: scale(1);
+    opacity: 0.72;
+  }
+  50% {
+    transform: scale(1.45);
+    opacity: 0.15;
+  }
+}
+
+@keyframes heroLineMove {
+  to {
+    stroke-dashoffset: -44;
+  }
+}
+
+@keyframes heroNodePulse {
+  0%,
+  100% {
+    transform: scale(1);
+    opacity: 0.94;
+  }
+  50% {
+    transform: scale(1.08);
+    opacity: 1;
+  }
+}
+
+.hero-bg-pulse {
+  display: none;
+}
+
+@keyframes heroLineMove {
+  to {
+    stroke-dashoffset: -40;
+  }
+}
+
+@keyframes heroNodePulse {
+  0%,
+  100% {
+    transform: scale(1);
+    opacity: 0.92;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 1;
+  }
+}
+
+@keyframes heroPulseMove1 {
+  0%,
+  100% {
+    transform: translate(0, 0);
+    opacity: 0.45;
+  }
+  50% {
+    transform: translate(18px, -10px);
+    opacity: 0.85;
+  }
+}
+
+@keyframes heroPulseMove2 {
+  0%,
+  100% {
+    transform: translate(0, 0);
+    opacity: 0.36;
+  }
+  50% {
+    transform: translate(-22px, 14px);
+    opacity: 0.72;
+  }
+}
+
+@keyframes heroPulseMove3 {
+  0%,
+  100% {
+    transform: translate(0, 0);
+    opacity: 0.38;
+  }
+  50% {
+    transform: translate(16px, 18px);
+    opacity: 0.78;
+  }
+}
+
+.animate-float-slow {
+  animation: floatSlow 14s ease-in-out infinite;
+}
+
+@keyframes floatSlow {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-12px);
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-background {
+    left: 0;
+    right: 0;
+    width: 100%;
+    min-width: auto;
+    opacity: 0.85;
+  }
+
+  .hero-bg-svg {
+    width: 110%;
+    left: -5%;
+    top: -10%;
+  }
+
+  .hero-lines path,
+  .hero-line-glow path {
+    animation: none;
+    stroke-dasharray: none;
+    stroke: rgba(109, 215, 216, 0.18);
+    opacity: 0.7;
+  }
+
+  .hero-bg-node {
+    animation: none;
+    filter: drop-shadow(0 0 14px rgba(109, 215, 216, 0.16));
+  }
+
+  .hero-bike-icon {
+    animation: none;
+    opacity: 0.8;
+  }
+
+  .hero-city-labels text {
+    font-size: 0.64rem;
+  }
+
+  .hero-bg-grid {
+    opacity: 0.05;
+    background-size: 180px 180px;
+  }
+
+  .hero-bg-pulse {
+    display: none;
+  }
+}
+
+@media (max-width: 640px) {
+  .hero-bg-grid {
+    opacity: 0.05;
+    background-size: 180px 180px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+}

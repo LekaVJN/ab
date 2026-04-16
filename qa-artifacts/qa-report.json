@@ -1,0 +1,216 @@
+{
+  "desktop": {
+    "anchors": [
+      {
+        "text": "ВАИП Вьюнов А.В.электровелосипеды для курьерских партнеров",
+        "href": "#hero",
+        "visible": true
+      },
+      {
+        "text": "О компании",
+        "href": "#company",
+        "visible": true
+      },
+      {
+        "text": "География",
+        "href": "#geography",
+        "visible": true
+      },
+      {
+        "text": "Почему мы",
+        "href": "#why",
+        "visible": true
+      },
+      {
+        "text": "Тарифы",
+        "href": "#pricing",
+        "visible": true
+      },
+      {
+        "text": "Как работаем",
+        "href": "#terms",
+        "visible": true
+      },
+      {
+        "text": "Контакты",
+        "href": "#contact",
+        "visible": true
+      },
+      {
+        "text": "+7 923 797 7812",
+        "href": "tel:+79237977812",
+        "visible": true
+      },
+      {
+        "text": "Обсудить подключение",
+        "href": "tel:+79237977812",
+        "visible": true
+      },
+      {
+        "text": "+7 923 797 7812",
+        "href": "tel:+79237977812",
+        "visible": true
+      },
+      {
+        "text": "Vyunov2@mail.ru",
+        "href": "mailto:Vyunov2@mail.ru",
+        "visible": true
+      },
+      {
+        "text": "Позвонить",
+        "href": "tel:+79237977812",
+        "visible": true
+      }
+    ],
+    "buttons": [
+      {
+        "text": "",
+        "aria": "Открыть меню",
+        "visible": false
+      }
+    ],
+    "viewportMeta": "width=device-width, initial-scale=1, viewport-fit=cover",
+    "bodyScrollWidth": 1440,
+    "viewportWidth": 1440,
+    "horizontalOverflow": 0,
+    "navChecks": [
+      {
+        "href": "#hero",
+        "found": true,
+        "top": 56
+      },
+      {
+        "href": "#company",
+        "found": true,
+        "top": 728
+      },
+      {
+        "href": "#geography",
+        "found": true,
+        "top": 1000
+      },
+      {
+        "href": "#why",
+        "found": true,
+        "top": 1000
+      },
+      {
+        "href": "#pricing",
+        "found": true,
+        "top": 1124
+      },
+      {
+        "href": "#terms",
+        "found": true,
+        "top": 1034
+      },
+      {
+        "href": "#contact",
+        "found": true,
+        "top": 1858
+      }
+    ]
+  },
+  "mobile": {
+    "anchors": [
+      {
+        "text": "ВАИП Вьюнов А.В.электровелосипеды для курьерских партнеров",
+        "href": "#hero",
+        "visible": true
+      },
+      {
+        "text": "О компании",
+        "href": "#company",
+        "visible": false
+      },
+      {
+        "text": "География",
+        "href": "#geography",
+        "visible": false
+      },
+      {
+        "text": "Почему мы",
+        "href": "#why",
+        "visible": false
+      },
+      {
+        "text": "Тарифы",
+        "href": "#pricing",
+        "visible": false
+      },
+      {
+        "text": "Как работаем",
+        "href": "#terms",
+        "visible": false
+      },
+      {
+        "text": "Контакты",
+        "href": "#contact",
+        "visible": false
+      },
+      {
+        "text": "+7 923 797 7812",
+        "href": "tel:+79237977812",
+        "visible": false
+      },
+      {
+        "text": "Обсудить подключение",
+        "href": "tel:+79237977812",
+        "visible": true
+      },
+      {
+        "text": "+7 923 797 7812",
+        "href": "tel:+79237977812",
+        "visible": true
+      },
+      {
+        "text": "Vyunov2@mail.ru",
+        "href": "mailto:Vyunov2@mail.ru",
+        "visible": true
+      },
+      {
+        "text": "Позвонить",
+        "href": "tel:+79237977812",
+        "visible": true
+      }
+    ],
+    "buttons": [
+      {
+        "text": "",
+        "aria": "Открыть меню",
+        "visible": true
+      }
+    ],
+    "viewportMeta": "width=device-width, initial-scale=1, viewport-fit=cover",
+    "bodyScrollWidth": 390,
+    "viewportWidth": 390,
+    "horizontalOverflow": 0,
+    "menuVisible": false,
+    "menuChecks": [
+      {
+        "href": "#company",
+        "found": false
+      },
+      {
+        "href": "#geography",
+        "found": false
+      },
+      {
+        "href": "#why",
+        "found": false
+      },
+      {
+        "href": "#pricing",
+        "found": false
+      },
+      {
+        "href": "#terms",
+        "found": false
+      },
+      {
+        "href": "#contact",
+        "found": false
+      }
+    ]
+  }
+}

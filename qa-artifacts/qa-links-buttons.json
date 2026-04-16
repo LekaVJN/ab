@@ -1,0 +1,171 @@
+{
+  "desktop": {
+    "navResults": [
+      {
+        "href": "#hero",
+        "clicked": true,
+        "hash": "#hero",
+        "exists": true,
+        "top": 0
+      },
+      {
+        "href": "#company",
+        "clicked": true,
+        "hash": "#company",
+        "exists": true,
+        "top": 187
+      },
+      {
+        "href": "#geography",
+        "clicked": true,
+        "hash": "#geography",
+        "exists": true,
+        "top": 757
+      },
+      {
+        "href": "#why",
+        "clicked": true,
+        "hash": "#why",
+        "exists": true,
+        "top": 652
+      },
+      {
+        "href": "#pricing",
+        "clicked": true,
+        "hash": "#pricing",
+        "exists": true,
+        "top": 1566
+      },
+      {
+        "href": "#terms",
+        "clicked": true,
+        "hash": "#terms",
+        "exists": true,
+        "top": 1957
+      },
+      {
+        "href": "#contact",
+        "clicked": true,
+        "hash": "#contact",
+        "exists": true,
+        "top": 2818
+      }
+    ],
+    "hrefs": [
+      {
+        "text": "+7 923 797 7812",
+        "href": "tel:+79237977812"
+      },
+      {
+        "text": "+7 923 797 7812",
+        "href": "tel:+79237977812"
+      },
+      {
+        "text": "Vyunov2@mail.ru",
+        "href": "mailto:Vyunov2@mail.ru"
+      }
+    ]
+  },
+  "mobile": {
+    "menuResults": [
+      {
+        "href": "#company",
+        "clicked": true,
+        "hash": "#company",
+        "exists": true,
+        "top": 0
+      },
+      {
+        "href": "#geography",
+        "clicked": true,
+        "hash": "#geography",
+        "exists": true,
+        "top": 146
+      },
+      {
+        "href": "#why",
+        "clicked": true,
+        "hash": "#why",
+        "exists": true,
+        "top": 290
+      },
+      {
+        "href": "#pricing",
+        "clicked": true,
+        "hash": "#pricing",
+        "exists": true,
+        "top": 384
+      },
+      {
+        "href": "#terms",
+        "clicked": true,
+        "hash": "#terms",
+        "exists": true,
+        "top": 337
+      },
+      {
+        "href": "#contact",
+        "clicked": true,
+        "hash": "#contact",
+        "exists": true,
+        "top": 481
+      }
+    ],
+    "menuLinks": [
+      {
+        "text": "ВАИП Вьюнов А.В.электровелосипеды для курьерских партнеров",
+        "href": "#hero",
+        "visible": true,
+        "top": 16
+      },
+      {
+        "text": "О компании",
+        "href": "#company",
+        "visible": true,
+        "top": 105
+      },
+      {
+        "text": "География",
+        "href": "#geography",
+        "visible": true,
+        "top": 145
+      },
+      {
+        "text": "Почему мы",
+        "href": "#why",
+        "visible": true,
+        "top": 185
+      },
+      {
+        "text": "Тарифы",
+        "href": "#pricing",
+        "visible": true,
+        "top": 225
+      },
+      {
+        "text": "Как работаем",
+        "href": "#terms",
+        "visible": true,
+        "top": 265
+      },
+      {
+        "text": "Контакты",
+        "href": "#contact",
+        "visible": true,
+        "top": 305
+      },
+      {
+        "text": "Позвонить",
+        "href": "tel:+79237977812",
+        "visible": true,
+        "top": 345
+      },
+      {
+        "text": "Письмо",
+        "href": "mailto:Vyunov2@mail.ru",
+        "visible": true,
+        "top": 405
+      }
+    ]
+  }
+}
