@@ -1,12 +1,20 @@
+const isGithubPages = process.env.GITHUB_PAGES === 'true';
+const repoBasePath = '/ab';
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
-  output: 'export',
-  basePath: '/ab',
-  assetPrefix: '/ab/',
   images: {
     unoptimized: true,
   },
+  ...(isGithubPages
+    ? {
+        output: 'export',
+        basePath: repoBasePath,
+        assetPrefix: `${repoBasePath}/`,
+        trailingSlash: true,
+      }
+    : {}),
 };
 
 module.exports = nextConfig;

@@ -19,7 +19,12 @@ Thumbs.db
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+*.out.log
+*.err.log
 
 # editor directories
 .vscode/
 .idea/
+
+# local QA artifacts
+qa-artifacts/

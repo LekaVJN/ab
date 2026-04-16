@@ -1,12 +1,13 @@
 import type { Metadata, Viewport } from 'next';
 import './globals.css';
+const basePath = process.env.GITHUB_PAGES === 'true' ? '/ab' : '';
 
 export const metadata: Metadata = {
   title: 'ИП Вьюнов Андрей Валерьевич | Шеринг велосипедов для курьеров',
   description:
     'ИП Вьюнов А.В. — электровелосипеды для курьерских партнеров: выдача, обслуживание, плановое ТО и замена техники в городах Сибири.',
   icons: {
-    icon: '/ab/favicon.svg',
+    icon: `${basePath}/favicon.svg`,
   },
 };
 
